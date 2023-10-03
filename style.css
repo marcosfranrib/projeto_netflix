@@ -161,7 +161,7 @@ p,.informe-email{
     height: 80vh;
 }
 
-#container-info{
+.container-info{
     display: flex;
     flex-direction: column;
     justify-content: center;

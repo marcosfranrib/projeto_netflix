@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) and (max-width:2000px){
+@media screen and (min-width: 800px){
 
     #heading{
         width: 79%;
@@ -44,14 +44,14 @@
     }
     
     #secao-principal{
-        height: 110vh;
+        height: 105vh;
         background-size: 122%;
         background-position: bottom;
     }
     
     #secao-principal::before{
         height: 110vh;
-        background: linear-gradient(180deg,rgba(6,6,6,0.8379726890756303) -2%, rgba(0,0,0,0.4206057422969187) 60%, rgba(5,5,5,1) 97%);
+        background: linear-gradient(180deg,rgba(6,6,6,0.8379726890756303) -2%, rgba(0,0,0,0.4206057422969187) 60%, rgba(5,5,5,1) 92%);
     }
 
     #media{
@@ -68,16 +68,17 @@
         height: 5vh;
     }
 
-    h1{
-        font-family: 'Lato', sans-serif;
-        width: 20em;
-    }
-    
     h1,p{
         color: white;
         text-align: center;
         font-size: 3.2em;
     }
+
+    h1{
+        font-family: 'Lato', sans-serif;
+        width: 20em;
+    }
+    
     
     p{
         font-size: x-large;
@@ -130,21 +131,19 @@
         height: 80vh;
     }
     
-    #container-info{
+    .container-info{
        display: flex;
        flex-direction: row;
        justify-content: center;
-       align-items: center;
-       width: 100%;
+       align-items: flex-start;
     }
     
     .info-tv{
         display: flex;
-        flex-direction: column;
+        align-items: start;
         gap: 20px;
+        padding-top: 5em;
         width: 35em;
-        padding-left: 5px;
-        overflow: hidden;
     }
     
     .info-tv h2{
@@ -157,9 +156,6 @@
         font-size: 24px;
         font-weight: lighter;
         color: white;
-    }
-    
-    .info-tv p{
         text-align: left;
     }
     
@@ -172,14 +168,19 @@
     .slide-tv img{
         width: 100%;
     }
+
     
-    video{
+    #video1{
         position: absolute;
         top: 50%;
         left: 55%;
         transform: translate(-49%,-48%);
         width: 425px;
-        overflow: hidden;
         z-index: -1;
     }
+
+    .linha{
+        padding: 30px;
+        border-bottom: 8px solid #232323;
     }
+}
