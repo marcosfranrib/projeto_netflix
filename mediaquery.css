@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1080px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        z-index: 1;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    #heading{
+        position: absolute;
+        top: 1%;
+        width: 90%;
+    }
+
+    #heading img{
+        width: 130px;
+    }
+
+    .slide-tv > img,video{
+        width: 100px;
+    }
+
+    /* PODE EXCLUIR*/
+
+    #container-heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    #nav{     
+        display: block;
+        width: 185px;
+        text-align: right;
+        margin-right: 12px;
+    }
+
+    #select-idioma{
+        height: 35px;
+        width: 70px;
+        padding: 5px;
+        background-color: #101315cb;
+        color: white;
+        border-radius: 6px;
+        font-size: small;
+        font-weight: 500;
+        text-align: center;
+        margin-right: 5px;      
+    }
+
+    .entrar{
+        padding: 10px;
+        width: 75px;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        background-color: #f81e28;
+    }
+
+    #secao-principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url(img/fundo-base.jpg) center;
+        background-repeat: no-repeat;
+        background-size: 350%;
+    }
+      
+    #secao-principal::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: rgb(6,6,6);
+        background: linear-gradient(180deg,rgba(6,6,6,0.8379726890756303) -3%, rgba(0,0,0,0.4206057422969187) 20%, rgba(5,5,5,1) 150%);
+    }
+
+    #media{
+        height: 75vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 40px;
+    }
+
+    .apresentacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        width: 100%;
+        height: 20vh;
+    }
+
+    h1,p{
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 800;
+    }
+
+    p,.informe-email{
+        font-size: large;
+        font-weight: 400;
+    }
+
+    .informe-email{
+        margin-top: 20px;
+        width: 270px;
+    }
+ 
+    #formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 500px;
+        margin-top: 20px;
+        width: 280px;
+    }
+
+    .botao-cadastro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65px;
+        width: 180px;
+        font-size: 15px;
+        font-weight: 600;
+        font-size: x-large;
+        border: none;
+        border-radius: 5px;
+        background-color: #f81e28;
+    }
+     
+    .input{
+        height: 58px;
+        width: 112%;
+        background-color: rgba(0, 0, 0, 0.61);
+        border: 1px solid rgba(255, 255, 255, 0.384);
+        padding-left: 20px;
+        border-radius: 4px;
+        color: white;
+    }
+}
