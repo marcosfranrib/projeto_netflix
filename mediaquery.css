@@ -1,159 +1,186 @@
-@charset "utf-8";
+@media screen and (min-width: 800px) and (max-width:1400px){
 
-@media screen and (max-width: 1080px){
     *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        z-index: 1;
-    }
-
-    header{
-        display: flex;
-        justify-content: center;
-    }
-
-    #heading{
-        position: absolute;
-        top: 1%;
-        width: 90%;
+       font-family: 'Lato', sans-serif;
     }
 
     #heading img{
-        width: 130px;
+        width: 180px;
     }
-
-    .slide-tv > img,video{
-        width: 100px;
-    }
-
-    /* PODE EXCLUIR*/
-
-    #container-heading{
+        
+    #nav{
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        width: 100%;
+        justify-content: space-around;
+        width: 260px;
     }
-
-    #nav{     
-        display: block;
-        width: 185px;
-        text-align: right;
-        margin-right: 12px;
-    }
-
+    
+    
     #select-idioma{
-        height: 35px;
-        width: 70px;
         padding: 5px;
-        background-color: #101315cb;
-        color: white;
+        width: 130px;
+        border: 1px solid white;
         border-radius: 6px;
-        font-size: small;
+        font-size: large;
         font-weight: 500;
         text-align: center;
-        margin-right: 5px;      
+       
     }
-
-    .entrar{
-        padding: 10px;
-        width: 75px;
+    
+    button{
+        height: 35px;
+        width: 80px;
         font-size: 15px;
         font-weight: 600;
         border-radius: 5px;
         border: none;
         color: white;
-        background-color: #f81e28;
+        background-color: #cc101a;
     }
-
+    
+    button:hover{
+        background-color: #b41f27;
+        cursor: pointer;
+    }
+    
     #secao-principal{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: url(img/fundo-base.jpg) center;
-        background-repeat: no-repeat;
-        background-size: 350%;
+        height: 110vh;
+        background-size: inherit;
     }
-      
+    
     #secao-principal::before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background: rgb(6,6,6);
-        background: linear-gradient(180deg,rgba(6,6,6,0.8379726890756303) -3%, rgba(0,0,0,0.4206057422969187) 20%, rgba(5,5,5,1) 150%);
+        height: 110vh;
+        background: linear-gradient(180deg,rgba(6,6,6,0.8379726890756303) -10%, rgba(0,0,0,0.4206057422969187) 70%, rgba(5,5,5,1) 97%);
     }
 
     #media{
-        height: 75vh;
+        height: 45vh;
         display: flex;
         align-items: center;
-        flex-direction: column;
-        padding: 0 40px;
+        gap: 12%;
     }
-
+    
     .apresentacao{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 60px;
-        width: 100%;
-        height: 20vh;
+        width: 83%;
+        height: 5vh;
+
     }
 
+    h1{
+        width: 25em;
+    }
+    
     h1,p{
         color: white;
         text-align: center;
-        font-size: 2em;
-        font-weight: 800;
+        font-size: 2.6em;
+        font-weight: ;
     }
-
-    p,.informe-email{
-        font-size: large;
-        font-weight: 400;
+    
+    p{
+        font-size: x-large;
+        font-weight: 500;
     }
-
+    
     .informe-email{
-        margin-top: 20px;
-        width: 270px;
+        margin-top: 25px;
+        font-size: 20px;
+        width: 36em;
     }
- 
+    
     #formulario{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: 500px;
-        margin-top: 20px;
-        width: 280px;
-    }
-
-    .botao-cadastro{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 65px;
-        width: 180px;
-        font-size: 15px;
-        font-weight: 600;
-        font-size: x-large;
-        border: none;
-        border-radius: 5px;
-        background-color: #f81e28;
+        gap: 1%;
+        position: absolute;
+        top: 80%;
+    
     }
-     
+    
     .input{
-        height: 58px;
-        width: 112%;
+        height: 57px;
+        width: 400px;
         background-color: rgba(0, 0, 0, 0.61);
         border: 1px solid rgba(255, 255, 255, 0.384);
         padding-left: 20px;
         border-radius: 4px;
         color: white;
     }
-}
+    
+    .input::placeholder{
+        color: #f0f0f0c7;
+        font-size: medium;
+    }
+    
+    .botao-cadastro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55px;
+        width: 180px;
+        font-size: x-large;
+    }
+    
+    .arrow{
+        font-size: xx-large;
+    }
+    
+    .tv{
+        background-color: #000000;
+        height: 80vh;
+    }
+    
+    #container-info{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+    }
+    
+    .info-tv{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 35em;
+        padding-left: 5px;
+        overflow: hidden;
+    }
+    
+    .info-tv h2{
+        font-size: 45px;
+        font-weight: 800;
+        color: white;
+    }
+    
+    .info-tv h3{
+        font-size: 24px;
+        font-weight: lighter;
+        color: white;
+    }
+    
+    .info-tv p{
+        text-align: left;
+    }
+    
+    .slide-tv{
+        position: relative;
+        width: 500px;
+        overflow: hidden;
+    }
+    
+    .slide-tv img{
+        width: 100%;
+    }
+    
+    video{
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-49%,-48%);
+        width: 425px;
+        overflow: hidden;
+        z-index: -1;
+    }
+    }
