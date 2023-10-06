@@ -282,4 +282,19 @@
         color:#0071EB;
     }
 
+    .formulario{
+        height: 45vh;
+    }
+
+    .container form > p{
+        font-size: 20px;
+    }
+
+    .form{
+        display: flex;
+        justify-content: center;
+        gap: 1%;
+        margin-top: 17px;
+    }
+
 }
