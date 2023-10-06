@@ -162,6 +162,7 @@ p,.informe-email{
 .container{
     background-color: #000000;
     height: 70vh;
+    padding: 0;
 }
 
 .info-esquerdo{
@@ -234,12 +235,8 @@ p,.informe-email{
 
  .info-direito{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     gap: 15px;
     width: 100%;
-    height: 35%;
 }
 
  .info-direito h2{
