@@ -125,24 +125,22 @@
     .arrow{
         font-size: xx-large;
     }
+
+
     
-    .tv,#pc{
+    .container{
         background-color: #000000;
-        height: 80vh;
+        height: 73vh;
     }
     
-    .container-infoA,.container-infoB{
+    .container-info{
        display: flex;
        flex-direction: row;
        justify-content: center;
        align-items: flex-start;
     }
-
-    .container-infoB{
-        flex-direction: row-reverse;
-    }
     
-    .info-tv{
+    .info-esquerdo{
         display: flex;
         align-items: start;
         gap: 20px;
@@ -150,13 +148,13 @@
         width: 34em;       
     }
     
-    .info-tv h2{
+    .info-esquerdo h2{
         font-size: 45px;
         font-weight: 800;
         color: white;
     }
     
-    .info-tv h3{
+    .info-esquerdo h3{
         width: 100%;
         font-size: 23px;
         font-weight: lighter;
@@ -164,17 +162,16 @@
         text-align: left;
     }
     
-    .slide-tv{
+    .slide{
         position: relative;
         width: 500px;
         overflow: hidden;
     }
     
-    .slide-tv img{
+    .slide img{
         width: 100%;
     }
 
-    
     .video1,.video-strangers{
         position: absolute;
         top: 50%;
@@ -183,20 +180,17 @@
         width: 425px;
         z-index: -1;
     }
-    
-    #pc,.container-pc{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-    #pc{
+/*ESTILO DA INFO DE PC E SMART*/
+
+    .pc{
         padding:5% 0;
         border-top: 8px solid #232323;
+        border-bottom: 8px solid #232323;
         height: 85vh;
     }
 
-    .container-pc{
+    .vPC{
         height: 350px;
         width: 95%;
         gap: 1.7%;
@@ -205,12 +199,12 @@
         flex-direction: row-reverse;
     }
 
-    .container-pc img{
+    .vPC img{
        position: relative;        
        width: 85%;
     }
 
-    .slide-pc{
+    .slide-esquerdo{
         position: relative;
         overflow: hidden;
         display: flex;
@@ -218,7 +212,7 @@
 
     }
 
-    .info-pc{
+    .info-direito{
         display: flex;
         justify-content: center;
         align-items: start;
@@ -229,14 +223,13 @@
         height: 50%;
     }
 
-    .info-pc h2{
-        font-size:43px;
-        font-weight: 800;   
-        width: 77%;
+    .info-direito h2{
+        font-size:46px;  
+        width: 79%;
         text-align: left;
     }
 
-    .info-pc p{
+    .info-direito p{
         text-align:left;
         width: 80%;
         font-size: 26px;
