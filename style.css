@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -158,27 +159,19 @@ p,.informe-email{
 
 .tv{
     background-color: #000000;
-    height: 80vh;
+    height: 70vh;
 }
 
-.container-info{
+.info-tv{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-}
-
- .info-tv{
-    display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    width: 90%;
-    padding-top: 50px;
+    width: 100vw;
+    padding-top: 50px;    
 }
 
- 
 .info-tv h2{
     font-size: 40px;
     font-weight: 800;
@@ -189,6 +182,7 @@ p,.informe-email{
     text-align: center;
     font-size: 20px;
     font-weight: 500;
+    width: 80%;
     color: white;
 }
 
@@ -202,7 +196,7 @@ p,.informe-email{
     width: 100%;
 }
 
-video{
+.video1{
     position: absolute;
     top: 55%;
     left: 60%;
@@ -211,3 +205,60 @@ video{
     overflow: hidden;
     z-index: -1;
 }
+
+#pc{
+    padding:5% 0;
+    border-top: 8px solid #232323;
+    background-color: #000000;
+}
+
+.container-pc{
+    height: 500px;
+    flex-direction: column-reverse;
+}
+
+
+.container-pc img{
+    position: relative;        
+    width: 85%;
+ }
+
+ .slide-pc{
+     position: relative;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+ }
+
+ .info-pc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 35%;
+}
+
+ .info-pc h2{
+    font-size: 35px;
+    font-weight: 800;   
+    width: 100%;
+    text-align: center;
+ }
+
+ .info-pc p{
+     text-align:center;
+     width: 82%;
+     font-size: 20px;
+     padding-bottom: 12px;
+ }
+
+ .video-strangers{
+     position: absolute;
+     top: 32.5%;
+     left: 48.9%;
+     max-width: 52%;
+     max-height: 51%;          
+     width: 430px;
+ }
