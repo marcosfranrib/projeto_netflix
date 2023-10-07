@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+.pagina-de-acesso{
+    height: 42em;
+    background-image: url(img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pagina-de-acesso::before{
+    content: '';
+    position: absolute;
+    height: 50em;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(5,5,5,1) -6%, rgba(0,0,0,0.4206057422969187) 35%, rgba(6,6,6,0.835171568627451) 85%);
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.flex-header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.flex-header > img{
+    width: 112px;
+    margin-left: -7px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 3%;
+    width: 160px;
+}
+
+select,.btn-entrar{
+    width: 72px;
+    height: 32px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+select{
+    padding-left: 5px;
+    background-color: #292626b4;
+    border: 1px solid #696666;
+}
+
+.btn-entrar{
+    background-color: #cf2626;
+}
+
+.login-container{
+    position: relative;
+    height: 68vh;
+    width: 87vw;
+    margin: auto;
+    padding-top: 33%;
+    color: rgb(255, 255, 255);
+}
+
+.login-container > h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: -10px;
+}
+
+.login-container p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.p-email{
+    margin: auto;
+    width: 260px;
+    line-height: 150%;
+}
+
+.form{
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+#input-email{
+    width: 290px;
+    height: 48px;
+    background-color: #00000067;
+    border: 1px solid #5f5b5b;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+#input-email::placeholder{
+    color: rgb(185, 169, 169);
+    font-size: 16px;
+}
+
+.form button{
+    background-color: #cf2626;
+    width: 135px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.informativos{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-bottom: 8px solid #2b2929;
+}
+
+.info-container{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paragrafo-container{
+    color: white;
+    text-align: center;  
+}
+
+.paragrafo-container h2{
+    font-size: xx-large;
+    padding-bottom: 15px;
+}
+
+.paragrafo-container p{
+    font-size: larger;
+}
+
+.slide-container{
+    position: relative;
+    height: 57%;
+    width: 100%;
+}
+
+.fundo-slide{
+    position: relative;
+    width:102%;
+}
+
+.video{
+    position: absolute;
+    top: 23%;
+    left: 13%;
+    width: 20em;
+    max-width: 82%;
+}
+
+.video-strangers{
+    top: 12%;
+    left: 18%;
+    width: 14em;
+    max-width: none;
+}
+
+.info-criancas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-criancas h2{
+    width: 80%;
+}
+
+.info-criancas p{
+    font-size: 17px;
+    width: 95%;
+}
+
+.slide-download{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    height: 70%;
+}
+
+.download-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 76px;
+    bottom: 5%;
+    width: 75%;
+    padding: 8px;
+    border: 2px solid #5f5b5b;
+    border-radius: 10px;
+    background-color: #000000;
+    z-index: 2;
+}
+
+.download-container img{
+    height: 80%;
+}
+
+.capa-strangers{
+    background-image: url(img/capa-strangers.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 50px;
+}
+
+.descricao-strangers{
+    width: 53%;
+    height: 90%;
+    color: white;
+}
+
+.descricao-strangers h2{
+    font-size: medium;
+}
+
+.descricao-strangers p{
+    font-size: small;
+    color: #0071eb;
+}
+
+.formEnd-container{
+    color: white;
+    height: 50%;
+}
+
+.formEnd-container p{
+    text-align: center;
+    width: 90%;
+    font-size: x-large;
+}
