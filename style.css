@@ -107,6 +107,10 @@ header{
     height: 20vh;
 }
 
+.bloco-p{
+    margin-top: 42px;
+}
+
 h1{
     word-spacing: -2px;
     line-height: 150%;
@@ -133,9 +137,9 @@ p,.informe-email{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 500px;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 280px;
 }
 
@@ -143,19 +147,24 @@ p,.informe-email{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65px;
-    width: 180px;
+    height: 55px;
+    width: 160px;
     font-size: 15px;
     font-weight: 600;
-    font-size: x-large;
+    font-size: 20px;
     border: none;
     border-radius: 5px;
     background-color: #f81e28;
 }
+
+.arrow{
+    font-size: xx-large;
+}
+
  
 .input{
-    height: 58px;
-    width: 112%;
+    height: 55px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.61);
     border: 1px solid rgba(255, 255, 255, 0.384);
     padding-left: 20px;
