@@ -1,0 +1,189 @@
+@media screen and (min-width: 1024px){
+    header{
+        top: 3%;
+    }
+
+    .flex-header{
+        width: 78%;
+    }
+
+    .flex-header > img{
+        width: 190px;
+    }
+
+    .login{
+        gap: 7%;
+        width: 270px;
+    }
+
+    select{
+        width: 140px;
+    }
+
+    .pagina-de-acesso{
+        display: flex;
+    }
+
+    .login-container{
+        height: 220px;
+        width: 80vw;
+        margin: auto;
+        padding-top: 0;
+    }
+
+    .login-container > h1{
+        font-size: 50px;
+    }
+
+    .login-container p{
+        font-size: 22px;
+    }
+
+    .p-email{
+        width: 100%;
+    }
+
+    .form{
+        height: 52px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2%;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #input-email{
+        width: 433px;
+        height: 55px;
+    }
+
+    .form button{
+        width: 170px;
+        height: 55px;
+    }
+
+    .informativos{
+        padding: 100px 0; 
+        height: auto;
+    }
+
+    .info-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .flex-reverse{
+        flex-direction: row-reverse;
+    }
+
+    .paragrafo-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        height: auto;
+        width: 45%;
+    }
+
+    .paragrafo-container h2{
+        font-size: 46px;
+        font-weight: 800;
+        padding-bottom: 15px;
+    }
+    
+    .paragrafo-container p{
+        font-size: x-large;
+        text-align: left;
+    }
+
+    .slide-container{
+        position: relative;
+        width: 50%;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .fundo-slide{
+        position: relative;
+        width: 90%;
+    }
+    
+    .video{
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        width: 67%;
+    }
+
+    .video-strangers{
+        top: 12%;
+        left: 15%;
+        width: 59%;
+    }
+
+    .info-criancas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info-criancas h2{
+        text-align: left;
+        width: 100%;
+    }
+    
+    .info-criancas p{
+        width: 100%;
+    }
+
+    .img-container{
+        display: flex;
+        justify-content: center;   
+    }
+
+    .download-container{
+        position: absolute;
+        left: 25%;
+        justify-content: space-around;
+        height: 110px;
+        width: 50%;
+    }
+
+    .capa-strangers{
+        background-image: url(img/capa-strangers.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #898a8a;
+        width: 20%;
+    }
+    
+    .descricao-strangers{
+        width: 48%;
+        height: 52%;
+        color: white;
+    }
+    
+    .descricao-strangers h2{
+        font-size: 16px;
+        padding-bottom: 2px;
+    }
+    
+    .descricao-strangers p{
+        font-size: 14px;
+        color: #0071eb;  
+    }
+
+    .download-container img{
+        height: 50%;
+        width: 17%;
+    }
+
+    .formEnd-container{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        height: 50%;
+    }
+}
