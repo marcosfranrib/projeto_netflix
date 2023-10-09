@@ -115,8 +115,9 @@
         top: 19%;
         left: 13.2%;
         width: 24rem;
+        height: 14rem;
         max-width: none;
-        max-height: 14rem; /*Muito importante o uso de max-height 
+        max-height: none; /*Muito importante o uso de max-height 
         quando se quer travar o tamanho na tela*/
         z-index: -1;
     }
@@ -124,6 +125,7 @@
     .video-strangers{
         top: 10%;
         left: 18%;
+        height: 50%;
         max-width: 60%;
         max-height: 50%;
         background-color: #898a8a;
