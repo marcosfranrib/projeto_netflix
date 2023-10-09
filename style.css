@@ -214,55 +214,59 @@ select{
     width: 95%;
 }
 
-.slide-download{
+.container-bloco-cel{
+    position: absolute;
+    top: 70%;
+    left: 16%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
-    height: 70%;
-}
-
-.download-container{
-    position: absolute;
-    left: 15%;
-    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    height: 76px;
-    bottom: 5%;
-    width: 75%;
-    padding: 8px;
-    border: 2px solid #5f5b5b;
-    border-radius: 10px;
-    background-color: #000000;
-    z-index: 2;
-}
-
-.download-container img{
-    height: 80%;
+    padding: 0.2rem 0.50rem;
+    width: 70%;
+    margin: auto;
+    border: 2px solid #898a8a;
+    background-color: black;
+    border-radius: 15px;
 }
 
 .capa-strangers{
-    background-image: url(img/capa-strangers.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 90%;
-    width: 50px;
+    margin: 0 0.4rem 0 0.4rem;
 }
 
-.descricao-strangers{
-    width: 53%;
-    height: 90%;
+.capa-strangers img{
+    height: 3.5rem;
+}
+
+.paragrafo{
+    width: 60%;
+    padding-left: 0.3rem;
     color: white;
 }
 
-.descricao-strangers h2{
-    font-size: medium;
+.paragrafo h2{
+    font-size: 1rem;
+    width: 100%;
 }
 
-.descricao-strangers p{
-    font-size: small;
-    color: #0071eb;
+.paragrafo p{
+    padding-top: 0.1rem;
+    font-size: 0.9rem;
+    width: 75%;
+    color: rgb(64, 147, 224);
+}
+
+.download{
+    height: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding:12px 0;
+}
+
+.download img{
+    height: 3rem;
+    max-width: 100%;
 }
 
 .formEnd-container{
