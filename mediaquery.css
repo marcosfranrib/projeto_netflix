@@ -70,7 +70,7 @@
     .info-container{
         margin: auto;
         flex-direction: row;
-
+        width: calc(83% - 3.5rem);
         /*Nem sempre há a necessidade de uso de display flex
           por exemplo em casos onde há apenas um item no
           container, o margin auto já resolve a centralização*/
