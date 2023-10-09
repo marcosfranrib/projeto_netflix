@@ -139,7 +139,6 @@ select{
 
 .informativos{
     position: relative;
-    height: 70vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -149,11 +148,10 @@ select{
 }
 
 .info-container{
-    height: 80%;
-    width: 90%;
+    height: auto;
+    width: calc(83% - 5rem);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -172,30 +170,23 @@ select{
 }
 
 .slide-container{
-    position: relative;
-    height: 57%;
     width: 100%;
     overflow: hidden;
 }
 
 .fundo-slide{
-    position: relative;
-    width:105%;
+    width:100%;
 }
 
 .video{
     position: absolute;
     top: 23%;
     left: 13%;
-    width: 20em;
-    max-width: 82%;
 }
 
 .video-strangers{
     top: 12%;
     left: 18%;
-    width: 14em;
-    max-width: none;
 }
 
 .info-criancas{

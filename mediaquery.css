@@ -64,63 +64,67 @@
     }
 
     .informativos{
-        padding: 100px 0; 
-        height: auto;
+        padding: 4.5rem 0; 
     }
 
     .info-container{
-        display: flex;
+        margin: auto;
         flex-direction: row;
-        justify-content: flex-end;
+
+        /*Nem sempre há a necessidade de uso de display flex
+          por exemplo em casos onde há apenas um item no
+          container, o margin auto já resolve a centralização*/
     }
 
     .flex-reverse{
         flex-direction: row-reverse;
     }
 
+    .flex-reverse .foto-video{
+        padding-right: 1rem;
+    }
+
     .paragrafo-container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        height: auto;
-        width: 45%;
+       width: 100%;
+       padding-right: 1rem;
+       text-align: left;
     }
 
     .paragrafo-container h2{
-        font-size: 46px;
+        font-size: 43px;
         font-weight: 800;
-        padding-bottom: 15px;
     }
     
     .paragrafo-container p{
-        font-size: x-large;
+        margin-top: 0.10rem;
+        font-size: 1.54rem;
         text-align: left;
     }
 
     .slide-container{
         position: relative;
-        width: 50%;
-        height: auto;
-        padding-left: 0;
+        width: 100%;
     }
 
     .fundo-slide{
-        position: relative;
-        width: 90%;
+        width: 100%;
     }
     
     .video{
-        position: absolute;
-        top: 20%;
-        left: 12%;
-        width: 67%;
+        overflow: hidden; /*Overflow hidden no container é essencial*/
+        top: 19%;
+        left: 13.2%;
+        max-height: 14rem; /*Muito importante o uso de max-height 
+        quando se quer travar o tamanho na tela*/
+        z-index: -1;
     }
 
     .video-strangers{
-        top: 12%;
-        left: 15%;
-        width: 59%;
+        top: 10%;
+        left: 18%;
+        max-width: 60%;
+        max-height: 50%;
+        background-color: #898a8a;
     }
 
     .info-criancas{
@@ -138,46 +142,60 @@
         width: 100%;
     }
 
-    .img-container{
-        display: flex;
-        justify-content: center;   
-    }
-
-    .download-container{
+    .container-bloco-cel{
         position: absolute;
-        left: 25%;
-        justify-content: space-around;
-        height: 110px;
-        width: 50%;
+        top: 67%;
+        left: 21%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0.5rem 0.75rem;
+        width: 55%;
+        max-width: 85%;
+        margin: auto;
+        border: 2px solid #898a8a;
+        background-color: black;
+        border-radius: 10px;
     }
 
     .capa-strangers{
-        background-image: url(img/capa-strangers.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: #898a8a;
-        width: 20%;
+        margin: 0 1rem 0 0;
     }
     
-    .descricao-strangers{
-        width: 48%;
-        height: 52%;
-        color: white;
-    }
-    
-    .descricao-strangers h2{
-        font-size: 16px;
-        padding-bottom: 2px;
-    }
-    
-    .descricao-strangers p{
-        font-size: 14px;
-        color: #0071eb;  
+    .capa-strangers img{
+        height: 5rem;
     }
 
-    .download-container img{
-        height: 50%;
-        width: 17%;
+    .paragrafo{
+        width: 60%;
+        padding-left: 0.7rem;
+        color: white;
+    }
+
+    .paragrafo h2{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .paragrafo p{
+        padding-top: 0.1rem;
+        font-size: 0.9rem;
+        width: 75%;
+        color: rgb(64, 147, 224);
+    }
+
+    .download{
+        height: 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        padding:12px 0;
+    }
+
+    .download img{
+        height: 3rem;
+        max-width: 100%;
     }
 
     .formEnd-container{

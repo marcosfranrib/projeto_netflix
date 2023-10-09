@@ -36,18 +36,29 @@
 
     <section class="informativos">
         <div class="info-container">
-        <div class="paragrafo-container">
+            <div class="paragrafo-container">
                 <h2>Aproveite na TV</h2>
                 <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
             </div>
             <div class="slide-container">
-                <video class="video" autoplay loop>
-                    <source src="img/video-netflix.m4v" type="">
-                </video>
-                <img src="img/tv.png" class="fundo-slide">
+                <div class="foto-video">
+                    <img src="img/tv.png" class="fundo-slide">
+                    <div class="video">
+                        <video autoplay loop>
+                            <source src="img/video-netflix.m4v" type="">
+                        </video>
+                    </div>
+                </div>
+               
             </div>
         </div>
     </section>
+
+    <!-- Na criação de seções flexiveis, é extremamente 
+        importante o isolamento dos blocos dentro de
+        outros blocos, sempre que possivel, já que facilita
+        a manipulação posterior, caso haja, por exemplo
+        a necessidade de sobreposição de itens -->
 
     <section class="informativos">
         <div class="info-container flex-reverse">
@@ -55,12 +66,19 @@
                 <h2>Assista onde quiser</h2>
                 <p>Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV.</p>
             </div>
-            <div class="slide-container slide-reverse">
-                 <video class="video video-strangers" loop autoplay>
-                        <source src="img/video-strangers.m4v" type="">
-                    </video>
-                <img src="img/monitor.png" class="fundo-slide">
-            </div>
+            
+                <div class="slide-container">
+                    <div class="foto-video">
+                        <img src="img/monitor.png" class="fundo-slide">
+                        <div class="video video-strangers">
+                            <video loop autoplay>
+                                <source src="img/video-strangers.m4v" type="">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                    
+                
         </div>
     </section>
 
@@ -82,17 +100,21 @@
                 <h2>Baixe séries para assistir offline</h2>
                 <p>Disponíveis somente em planos sem anúncios.</p>
             </div>
-            <div class="slide-container slide-download">
-                <div class="download-container">
-                    <div class="capa-strangers"></div>
-                    <div class="descricao-strangers">
-                        <h2>Stranger Things</h2>
-                        <p>Download em andamento...</p>
-                    </div>
-                    <img src="img/download.gif" alt="">
-                </div>
-                <div class="img-container">
-                    <img src="img/celular-strangers.jpg" class="fundo-slide">
+            <div class="slide-container">
+                <div class="foto-video">
+                   <img src="img/celular-strangers.jpg" class="fundo-slide cel-strange"> 
+                   <div class="container-bloco-cel">
+                        <div class="capa-strangers">
+                            <img src="img/capa-strangers.png" alt="">
+                        </div>
+                        <div class="paragrafo">
+                            <h2>Stranger Things</h2>
+                            <p>Download em andamento...</p>
+                        </div>
+                        <div class="download">
+                            <img src="img/download.gif" alt="">
+                        </div>
+                   </div>
                 </div>
             </div>
         </div>
