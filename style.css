@@ -150,7 +150,7 @@ select{
 
 .info-container{
     height: auto;
-    width: 90%;
+    width: 89%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,12 +167,14 @@ select{
 }
 
 .paragrafo-container p{
-    font-size: larger;
+    margin-top: 0.10rem;
+    font-size: 1.20rem;
 }
 
 .slide-container{
-    width: 111%;
+    width: 101%;
     overflow: hidden;
+
 }
 
 .fundo-slide{
@@ -182,16 +184,19 @@ select{
 .video{
     position: absolute;
     top: 45%;
-    left: 13%;
+    left: 17%;
     max-height: 9.7rem;
+    max-width: 17rem;
     overflow: hidden;
     z-index: -1;
 }
 
 
 .video-strangers{
-    top: 12%;
-    left: 18%;
+    top: 40%;
+    left: 20%;
+    max-width: 57%;
+    max-height: 23%;
 }
 
 .info-criancas{

@@ -114,6 +114,7 @@
         overflow: hidden; /*Overflow hidden no container é essencial*/
         top: 19%;
         left: 13.2%;
+        max-width: 24rem;
         max-height: 14rem; /*Muito importante o uso de max-height 
         quando se quer travar o tamanho na tela*/
         z-index: -1;
