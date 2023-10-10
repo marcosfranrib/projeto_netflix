@@ -125,7 +125,12 @@ a:hover{
 
 @media screen and (min-width: 1200px) {
 
+    .nav{
+        max-width: none;
+    }
+
     .header{
+        max-width: none;
         position: absolute;
     }
 
