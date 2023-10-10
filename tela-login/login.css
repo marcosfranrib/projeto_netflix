@@ -11,6 +11,10 @@ body{
     background-color: black;
 }
 
+.header{
+    position: absolute;
+}
+
 .nav{
     position: relative;
     width: 100%;
@@ -27,6 +31,7 @@ body{
     height: 81vh;
     width: 100%;
     padding: 0.7rem 1.2rem;
+    border-bottom: 1px solid #858383;
 }
 
 h1{
@@ -35,7 +40,7 @@ h1{
     color: white;
 }
 
-.input-container{
+.input-container,.sign{
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
@@ -54,7 +59,7 @@ h1{
     font-weight: lighter;
 }
 
-.button{
+.link > .button{
     margin-top: 1.8rem;
     border: none;
     border-radius: 5px;
@@ -63,6 +68,7 @@ h1{
     font-size: 1rem;
     background-color: #E50914;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .checkbox{
@@ -74,10 +80,90 @@ h1{
     justify-content: space-between;
     width: 100%;
     color: #ffffff9d;
-    font-size: 0.87rem;
+    font-size: 0.80rem;
 }
 
 label{
     padding-left: 0.3rem;
 }
 
+a{
+    text-decoration: none;
+    color: #ffffff9d;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.sign{
+    margin-top: 1.3rem;
+    padding: 0.33rem 0;
+    height: 37%;
+    color: #7e7d7d;
+}
+
+.sign a{
+    padding-left: 0.5rem;
+    color: white;
+}
+
+.captcha{
+    margin-top: 1rem;
+    font-size: smaller;
+    color: #928f8f;
+}
+
+.captcha a{
+    color: #2d53d1;
+}
+
+.loading{
+    position: absolute;
+    background-color: #2d53d1;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none
+}
+
+@media screen and (min-width: 1200px) {
+    .nav{
+        padding-top: 0.5%;
+        padding-left: 1.5%;
+        position: static;
+       
+    }
+    
+    .nav img{
+        width: 15%;
+    }
+
+    .fundo{
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        opacity: 55%;
+        background-image: url(../img/fundo.jpg);
+
+    }
+    
+    .login-container{
+        background-color: black;
+        height: 38rem;
+        width: 28rem;
+        padding: 4rem 4.3rem;
+        margin:auto ;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .login-container h1{
+        font-size: 2.2rem;
+    }
+
+    .sign{
+        margin-top: 4.5rem;
+    }
+}

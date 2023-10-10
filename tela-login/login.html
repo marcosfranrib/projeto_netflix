@@ -3,34 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Netflix</title>
+    <title>Netflix</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
+    <div class="loading"></div>
+   
     <header class="header">
         <nav class="nav">
             <img src="../img/logo-netflix.png" alt="">
         </nav>
     </header>
     <main>
+        <div class="fundo"></div>
         <section class="login-container">
-            <form action="">
+            <form action="" class="form">
                 <h1>Entrar</h1>
                 <div class="input-container">
                     <input type="text" name="" class="input" placeholder="Email ou numero de telefone">
                     <input type="text" name="" class="input" placeholder="Senha">
-                    <button class="button">Entrar</button>
+                    <a href="../index.html" class="link">
+                        <button class="button">Entrar</button>
+                    </a>
                     <div class="label">
                         <div>
                             <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
                             <label for="checkbox">Lembre-se de mim</label>
                         </div>
-                        <a href="">Precisa de Ajuda?</a>
+                        <a href="#">Precisa de Ajuda?</a>
                     </div>
                 </div>
             </form>
+
+            <div class="sign">
+                <div>
+                   <p>Novo por aqui?<a href="#">Assine agora.</a></p>
+                </div>
+                <div class="captcha">
+                    <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.<a href="#">Saiba mais.</a></p>
+                </div>
+            </div>
         </section>
     </main>
+
+    <script>
+        let button = document.querySelector('.button');
+        let div = document.querySelector('.loading')
+        const link = document.querySelector('.link')
+            
+            button.addEventListener("click", (e) => {
+                e.preventDefault()
+                div.style.display = 'block'
+
+                setTimeout(() => {
+                    link.click()
+                }, 1000);     
+            });
+    </script>
     
 </body>
 </html>
