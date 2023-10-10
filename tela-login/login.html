@@ -12,7 +12,6 @@
             <img src="../img/logo-netflix.png" alt="">
         </nav>
     </header>
-    <div class="loading"></div>
     <div class="fundo"></div>
     <main>
         <section class="login-container">
@@ -21,9 +20,11 @@
                 <div class="input-container">
                     <input type="text" name="" class="input" placeholder="Email ou numero de telefone">
                     <input type="text" name="" class="input" placeholder="Senha">
+
                     <a href="../index.html" class="link">
                         <button class="button">Entrar</button>
                     </a>
+                    
                     <div class="label">
                         <div>
                             <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
@@ -43,22 +44,6 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <script>
-        let button = document.querySelector('.button');
-        let div = document.querySelector('.loading')
-        const link = document.querySelector('.link')
-            
-            button.addEventListener("click", (e) => {
-                e.preventDefault()
-                div.style.display = 'block'
-
-                setTimeout(() => {
-                    link.click()
-                }, 1000);     
-            });
-    </script>
-    
+    </main>   
 </body>
 </html>
